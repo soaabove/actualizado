@@ -1,0 +1,41 @@
+<body style="background-color:Azure;">
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Comunicado
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Una organización social “ExPsy” apoyó al investigador en la elaboración de la presente plataforma, la cual en estos momentos se encuentra solicitando una contribución por el trabajo realizado y uso de la presente plataforma web.
+        <br>
+        Esta contribución será destinado a la mejora de esta y otras plataformas. Además, será destinado a mejoras de espacios sociales del distrito de Villa María del Triunfo (cuidado de parque, limpieza de calles, entre otros). La organización envia lo siguiente:
+
+    </p>
+        <p>
+            <b>Mensaje:</b>
+<p style="background-color:HoneyDew;"><i>Estimado participante</i>
+        <br>
+        <br>
+        Nos es grato, y a la vez informarle que la contribución solicitado por nuestra organización social “ExPsy” es entre S/2.00 a S/6.00 nuevos soles. Se tiene hasta el presente día para lograr cumplir este pago.
+        <br>
+        <b>Cabe mencionarle que el pago permitirá un financiamiento y mantenimiento de otros servicios sociales.</b>
+        <br>
+        <br>
+        A continuación, le presentamos el detalle de la contribución:
+        <br>
+        <br>
+        Monto a pagar: S/2.00 -  S/6.00 soles
+        </p>
+
+<p>
+    <center>
+
+    {% formfield player.acepta2 label="Acepto pagar"%}
+    </center>
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}

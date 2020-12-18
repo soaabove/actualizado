@@ -1,0 +1,21 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    <h1 style="text-align:center;">Instrucciones</h1>
+{% endblock %}
+
+{% block content %}
+    <br>
+   <p style="text-align:center;">
+        En la siguiente página, usted tendrá que responder preguntas acerca de situaciones económicas que suele sucederle en su vida diaria y responder en función de lo que realiza normalmente con respuestas de “Sí” o “No” y respuestas múltiples.
+        <p>
+        <p style="text-align:center;">Recuerde que usted es acreedor de S/.50.00 (cincuenta nuevos soles) por su participación y tiene opción de utilizarlo en el presente estudio. Asimismo, recuerde que no existe pregunta correcta ni incorrecta, y toda información tendrá fines científicos.</p>
+
+   </p>
+
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}

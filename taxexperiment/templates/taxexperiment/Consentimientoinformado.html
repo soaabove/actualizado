@@ -1,0 +1,68 @@
+<html>
+<body style="background-color:Azure;">
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    <h1 style="text-align:center;", style="color:Black;">CONSENTIMIENTO INFORMADO</h1>
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        <p style ="text-align:center;", style = "margin-left: 2.8em; padding: 0 7em 1em 1; border-width: 3px; border-color: black; border-style: solid;">
+         Ha sido invitado(a) a participar voluntariamente en el presente estudio a cargo del estudiante <b> Nixon Bautista Medina </b>de la Universidad Nacional Mayor de San Marcos, Perú. El propósito del estudio es investigar cómo las personas deciden y gestionan acerca de gastos económicas diarias.
+
+        <p>
+        <h5><b>Procedimiento:</b></h5>
+        En caso decida participar, el estudio durará 15 minutos y se realizará lo siguiente:
+        <br>
+        <ol>
+            <li>Aceptará un consentimiento informado para su participación en esta investigación.</li>
+            <li>Brindará información sobre sus creencias y decidirá sobre situaciones económicas diarias con un monto de dinero brindado a usted por el investigador. Su información se usará para el objetivo de la investigación con fines científicos.</li>
+            <li>Completará un cuestionario acerca de las actividades realizadas. Toda información se mantendrá confidencial.</li>
+            <li>En un futuro máximo 3 meses, cabe la posibilidad que el investigador se comunique con usted mediante mensaje o llamada con la finalidad de recabar mayor información sobre sus actividades económicas. Su participación será voluntaria.</li>
+        </ol>
+        {% formfield player.pregconsen label="¿Acepta la posibilidad que el investigador se comunique con usted?"%}
+
+        <p>
+        <h5><b>Riesgos:</b></h5>
+        No existe riesgo físico, psicológico, económico o social debido a que es una actividad virtual. De existir la posibilidad de sentirse incómodo, puede elegir retirarse del estudio.
+
+        <p>
+        <h5><b>Beneficios:</b></h5>
+        Los resultados de la investigación ayudarán a la comunidad científica universitaria del Perú y a su distrito de Villa María del Triunfo.
+
+        <p>
+        <h5><b>Costos y compensación:</b></h5>
+No hay un costo monetario. Inicialmente se hace acreedor de un monto de S/50.00 (Cincuenta nuevos soles) por aceptar participar en el estudio. Durante el estudio, decidirá sobre situaciones económicas y el resultado final de este monto ingresará a un sorteo público vía Facebook (página ExPsy) para definir si es beneficiado usted. <i>Ej.: Gano S/50.00 por participar, luego pierdo S/4.00 en una actividad, entonces puedo ganarme en el sorteo el resultado final que es S/46.00.</i>
+        <br>
+        El método de pago será de manera electrónica mediante Yape, Plin, cuenta bancaria o CCI.
+        <p>
+        <h5><b>Confidencialidad:</b></h5>
+        Se respetará su anonimato. Sus datos se guardarán mediante un código.
+
+        <p>
+        <h5><b>Uso futuro de la información:</b></h5>
+        La información brindada será usada para el único objetivo del estudio, además, serán almacenados durante 3 años en servidores seguros, posteriormente, su información será eliminada. Los resultados se publicarán en revistas y publicaciones científicas.
+
+        <p>
+        <h5><b>Derechos de participante:</b></h5>
+        Participar y retirarse es su elección, sin embargo, al retirarse no será acreedor de la compensación. No existe alguna sanción.
+
+        <p>
+        <h5><b>Declaración del consentimiento:</b></h5>
+Acepto voluntariamente participar en este estudio, comprendo de las actividades en las que participaré si decido ingresar al estudio, también entiendo que puedo decidir no participar y que puedo retirarme del estudio en cualquier momento. Permito que el investigador <b> Nixon Bautista Medina</b>, con <b>DNI 77809909</b>, con número de celular <b>991312331</b> actúe en relación con lo descrito en el presente documento.
+
+    <p>
+    <center>
+    {% formfield player.acepta1 label="He leído TODO el consentimiento informado y acepto participar de esta investigación"%}
+    </center>
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}
+
+
+</body>
+</html>

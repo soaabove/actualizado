@@ -1,0 +1,49 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+<h1 style="text-align:center;">Comunicado</h1>
+{% endblock %}
+
+{% block content %}
+    {% if player.turnodeljugador == 2  %}
+
+    <p>
+        <i>Estimado participante del distrito de Villa María del Triunfo</i>
+        <br>
+        <br>
+        <b>Le comentamos que el 70% de vecinos participantes de su distrito V. M. T cumplió con esta contribución voluntariamente.</b>
+        <br>
+        Puede visualizar este cumplimiento en el siguiente gráfico:
+    </p>
+        <img src="/static/descriptiva.png" alt="centered image" width="500" height="600">
+
+    {% endif %}
+{% if player.turnodeljugador == 1  %}
+    <br>
+    <b>Mensaje</b>
+    <p>
+        <i>Estimado participante del distrito de Villa María del Triunfo</i>
+        <br>
+        <br>
+        <b>Se reitera que cumplir pagos como esta contribución es un deber cívico y moral. Además, la organización social ha iniciado procesos coactivos como multa en el 68% de sus vecinos participantes que incumplieron este pago.</b>
+        <br>
+        Puede visualizar la cantidad de incumplidores detectados y sancionados en el siguiente gráfico.
+    </p>
+       <img src="/static/prescriptiva.png" alt="centered image" width="500" height="600">
+        <br>
+{% endif %}
+        <br>
+        A continuación, le presentamos el detalle de la contribución:
+        <br>
+        <br>
+        Monto a pagar: S/2.00 - S/6.00 soles
+
+<center>
+     {% formfield player.acepta4 label="Acepto pagar"%}
+</center>
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}

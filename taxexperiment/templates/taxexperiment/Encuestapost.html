@@ -1,0 +1,20 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+<h1 style="text-align:center;">Cuestionario final</h1>
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        El investigador agradece su participación y tiempo. Antes de finalizar se solicita responder las siguientes preguntas:
+        <br>Recuerde no existe respuesta correcta, ni incorrecta.
+    </p>
+    {% formfields %}
+
+    <h1 style="text-align:center;">{% next_button %}</h1>
+
+    {% endblock %}

@@ -1,0 +1,33 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+<h1 style="text-align:center;">Encuesta</h1>
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Se agradece por aceptar en participar en el presente estudio, la cual tiene de propósito investigar cómo las personas deciden y gestionan acerca de gastos económicas diarias, asimismo, del impuesto predial.
+
+    </p>
+        El primer paso para participar en el estudio es completar datos generales. Cabe mencionar que estos datos permitirán cumplir el propósito del presente estudio.
+
+
+
+    {% formfields %}
+
+    <p style="text-align:center;">
+        <b>Requerimientos adicionales para su participación:</b>
+        <br>
+        a.	Paquete de internet estable durante mínimo 15 minutos.
+        <br>
+        b.	Evitar en lo posible distractores y acompañante(s) durante esta actividad.
+        <br>
+
+    </p>
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}

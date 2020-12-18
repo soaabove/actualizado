@@ -1,0 +1,23 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+<h1 style="text-align:center;">Monto total</h1>
+{% endblock %}
+
+{% block content %}
+
+    <p style="text-align:center;">
+        La organización social "ExPsy" y el investigador agradece haber aceptado pagar esta contribución.
+        <br>
+        <br>
+        Ahora, por favor, indique el monto que desea pagar. Este monto se encuentra en un intervado de S/2.00 hasta S/6.00. Posteriormente, de click en siguiente.
+    </p>
+<center>
+    {% formfields %}
+</center>
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}

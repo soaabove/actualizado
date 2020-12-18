@@ -1,0 +1,23 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+<h1 style="text-align:center;">Pregunta de comprensión</h1>
+{% endblock %}
+
+{% block content %}
+    <br>
+   <p>
+        Con la finalidad de desenvolverse adecuadamente en el estudio, se requiere resolver la siguiente interrogante:
+        <p>
+        "La actividad que realizaré se trata de…"
+        <br>
+    {% formfields %}
+    <i>*Si en caso respondió equivocadamente, se solicita que vuelva a leer las instrucciones nuevamente.</i>
+    <br>
+        </p>
+<h1 style="text-align:center;">{% next_button %}</h1>
+
+{% endblock %}

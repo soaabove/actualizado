@@ -1,0 +1,32 @@
+<body style="background-color:Azure;"></body>
+
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+<h1 style="text-align:center;">¡Realizado!</h1>
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Reiteramos un agradecimiento especial por brindarnos su tiempo y disponibilidad al participar en este estudio de investigación realizada por Nixon Bautista Medina de la Facultad de Psicología de la Universidad Nacional Mayor de San Marcos.
+   <p>
+    Cabe mencionar que se le está brindando un código la cual entrará a un sorteo el día XX a las XX:XX horas en la página de facebook "ExPsy" para determinar a los participantes quienes serán premiados de su monto final en el estudio como agradecimiento por su participación.
+    <br>Este código mostrado será su identificación y entrará al sorteo. En caso usted gane, el investigador se comunicará mediante su número telefónico.
+    <p>
+
+    <h4 align="middle">{{ participant_id }}</h4>
+
+    <footer>
+        <br><b>Mayor información:</b>
+        <br>Nixon Bautista Medina
+        <br>991312331
+        <br>Página de facebook: ¿?
+  <p><a href="mailto:nixon.bautista@unmsm.edu.pe">nixon.bautista@unmsm.edu.pe</a></p>
+</footer>
+
+
+    {% formfields %}
+
+{% endblock %}
